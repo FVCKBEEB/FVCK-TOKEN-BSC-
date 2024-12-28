@@ -327,10 +327,11 @@ contract FVCK is ERC20, Ownable {
         totalSellFees = sellFees.fvck;
 
         // Set percentage distributions for specific fee allocations
-        percent.percent0 = 200;
-        percent.percent1 = 700;
-        percent.percent2 = 50;
-        percent.percent3 = 50;
+        percent.percent0 = 100; // Treasure Wallet
+        percent.percent1 = 400; // Staking USDT Wallet
+        percent.percent2 = 200; // Marketing
+        percent.percent3 = 300; // Liquidez
+
 
         // Define wallets for marketing, staking rewards, and treasury funds
         projectWallets.marketingWallet = 0x993a3e9c8f6c0B996dc2352481d1C2120dFE98af;
@@ -373,7 +374,7 @@ contract FVCK is ERC20, Ownable {
         _mint(owner(), 500000000 * (10 ** 18));
         
         // Set the threshold for token swaps and liquidity operations
-        swapTokensAtAmount = 2500000 * (10 ** 18);
+        swapTokensAtAmount = 100000 * (10 ** 18);
 
     }
 
