@@ -11,21 +11,21 @@ tools that allow anonymous reporting with irrefutable proof of fraud in the mark
 FVCK is a memecoin with real utility, bringing a revolution in security and transparency 
 to the crypto market. 
 
-🔗 Website: https://fvckbeeb.com
-🚀 Group: https://t.me/FVCKBEEB_US
-🦖 DinoBlock0x(DEV): https://t.me/DinoBlock0x 
+    🔗 Website: https://fvckbeeb.com
+    🚀 Group: https://t.me/FVCKBEEB_US
+    🦖 DinoBlock0x(DEV): https://t.me/DinoBlock0x 
 
-🫂 Based Team
-🔒 Safe & Transparent
-🔥 Deflationary Token 
-🏦 Token Meme Utility
-🌟 Engaged Community 
-🌍 Decentralized Autonomous Organization (DAO)
+    🫂 Based Team
+    🔒 Safe & Transparent
+    🔥 Deflationary Token 
+    🏦 Token Meme Utility   
+    🌟 Engaged Community 
+    🌍 Decentralized Autonomous Organization (DAO)
 
 Part of our ecosystem:
-🧷 Space ID. Project wallet addresses identified. 
-⚖️ Snapshot. DAO management system. 
-🔑 Safe.Global. Multi-signature wallet.
+    🧷 Space ID. Project wallet addresses identified. 
+    ⚖️ Snapshot. DAO management system. 
+    🔑 Safe.Global. Multi-signature wallet.
 
 */
 // SPDX-License-Identifier: MIT
@@ -311,6 +311,7 @@ contract FVCK is ERC20, Ownable {
         // Set developer information for transparency and community engagement
         webSite = "https://fvckbeeb.com";
         telegram = "https://fvckbeeb.com/Telegram-US";
+        twitter = "https://fvckbeeb.com/Twitter";
 
         // Initialize buy and sell fees (e.g., for marketing or other purposes)
         developer = "DinoBlock0x";
@@ -334,25 +335,24 @@ contract FVCK is ERC20, Ownable {
 
 
         // Define wallets for marketing, staking rewards, and treasury funds
-        projectWallets.marketingWallet = 0x993a3e9c8f6c0B996dc2352481d1C2120dFE98af;
-        projectWallets.stakingUSDTWallet = 0x0875EEFE6Ee248e10D28B233ce5E1bAECb2cc4C3;
-        projectWallets.treasureWallet = 0xA8C4b89f6253e1f2A1f32Bdd802827f7D957Ea30;
+        projectWallets.marketingWallet = 0x4e33da0fC4f846B49f4B731d0103367aEcB03A32;
+        projectWallets.stakingUSDTWallet = 0xab6327DFF6838AB06518eDEd02710346B8100F63;
+        projectWallets.treasureWallet = 0x34D81d6f2D3b8bCdB9E6aee7A2e562a1347003BB;
 
         // Initialize Uniswap V2 router for decentralized exchange functionality
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(
-            0xD99D1c33F9fC3444f8101754aBC46c52416550D1
+            0x10ED43C718714eb63d5aA57B78B54704E256024E
             );
 
         // Create a liquidity pool (pair) for the token and WETH
-        //0x10ED43C718714eb63d5aA57B78B54704E256024E
         address _uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
 
         // Set the router and pair addresses
         uniswapV2Router = _uniswapV2Router;
         uniswapV2Pair   = _uniswapV2Pair;
-        addressWETH = 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd;
-        //0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
+        addressWETH = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+        
 
         // Approve maximum token allowance for the router to simplify interactions
         _approve(address(this), address(uniswapV2Router), type(uint256).max);

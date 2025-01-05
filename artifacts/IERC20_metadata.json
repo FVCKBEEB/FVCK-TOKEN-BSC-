@@ -180,11 +180,11 @@
 	},
 	"sources": {
 		"FVCK-TOKEN.sol": {
-			"keccak256": "0x792ca725a9486f4aeb5072a0a92d436db1fd94cccf72d77e24380e5e34c2ddc3",
+			"keccak256": "0x0bf5a311a07e015745092d1886fa6caabdc637eba8fa35c2cb6588cd3a405e7a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1b8a4d24ace374b75e3458cc9e6a7b25e020eabcdec21b75932d19b1a6972863",
-				"dweb:/ipfs/QmYm6tUvvxDkdwpcv5RWR11B71FfzBjuKDu9fBFJ7RxoaS"
+				"bzz-raw://383ffe7f02911d7ea9177eeac7de294600c328e29bbfca5028985a03fe0834ec",
+				"dweb:/ipfs/QmWFxG9pNKzPCKCdYgz1BtUZRxGCwNYw4KQaubg9wab5s2"
 			]
 		}
 	},
